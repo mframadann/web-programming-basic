@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn - Android Developer</title>
+
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="./public/assets/styles/style.build.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-full h-full bg-gray-900">
+    <!-- Nav -->
+    <nav class="w-full p-4 bg-transparent sticky top-0 backdrop-blur-lg">
+      <div class="w-full flex items-center justify-between">
+        <img
+          width="165"
+          src="./public/assets/images/logo.png"
+          alt="meow-learning-logo"
+        />
+        <button
+          id="nav-toggle-mobile"
+          class="w-full h-full max-w-10 max-h-8 py-3.5 border border-white rounded-lg flex items-center justify-center"
+        >
+          <svg
+            width="18"
+            height="10"
+            viewBox="0 0 18 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1.50897H17M1 8.49152H17"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="px-4">
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="w-full min-h-[925px] bg-ornament-box-type-1 bg-cover bg-center"
+      >
+        <div class="flex flex-col text-center items-center">
+          <span
+            class="w-full max-w-fit py-2 px-3 bg-white/10 rounded-full uppercase text-white text-xs tracking-wide mt-10"
+          >
+            Meow Learning
+          </span>
+          <div class="flex flex-col gap-14">
+            <div class="flex flex-col gap-10 items-center">
+              <div class="flex gap-3.5 flex-col">
+                <h1 class="text-5xl text-white font-bold leading-tight">
+                  <span class="text-transparent bg-primary-500 bg-clip-text"
+                    >Learn About Webdev Easily</span
+                  >
+                  With Meow Learning
+                </h1>
+                <p class="text-gray-200 text-sm font-medium">
+                  Learn about basic web development easily in meow learning with
+                  expertise instructor in related field.
+                </p>
+              </div>
+              <button
+                class="w-full max-w-fit py-4 px-6 bg-primary-500 rounded-full text-white flex items-center space-x-2 font-medium"
+              >
+                <span>Get Started</span>
+                <!-- Svg Icon -->
+                <svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.5 9.00021H12.67L7.79 13.8802C7.4 14.2702 7.4 14.9102 7.79 15.3002C8.18 15.6902 8.81 15.6902 9.2 15.3002L15.79 8.71021C16.18 8.32021 16.18 7.69022 15.79 7.30022L9.21 0.700215C8.82 0.310215 8.19 0.310215 7.8 0.700215C7.41 1.09021 7.41 1.72022 7.8 2.11022L12.67 7.00022H1.5C0.95 7.00022 0.5 7.45021 0.5 8.00022C0.5 8.55021 0.95 9.00021 1.5 9.00021Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="min-h-[342px] px-10 py-4 bg-card-banner bg-no-repeat bg-center bg-contain"
+            >
+              <div class="mx-auto text-lg font-bold text-white max-w-52">
+                <span>What we will learn in meow learning?</span>
+              </div>
+              <div
+                class="w-fit mx-auto h-full min-h-[250px] flex justify-center items-center"
+              >
+                <swiper-container
+                  loop="true"
+                  slides-per-view="1"
+                  class="max-w-[265px] mt-10"
+                  pagination="true"
+                  swiper-pagination-bullet-active="red"
+                >
+                  <swiper-slide class="mb-14">
+                    <div class="flex flex-col gap-2.5 items-center text-center">
+                      <div
+                        class="p-2 w-full h-full rounded-full bg-learning-path-outline max-w-fit"
+                      >
+                        <div
+                          class="w-24 h-24 border-2 rounded-full border-green-800 bg-white flex items-center justify-center"
+                        >
+                          <svg
+                            width="45"
+                            height="45"
+                            viewBox="0 0 19 19"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="rounded-md"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M19 0H0V19H19V0ZM10.1333 10.1333C10.1333 9.46145 10.4002 8.81709 10.8753 8.342C11.3504 7.8669 11.9948 7.6 12.6667 7.6H14.1449C15.4267 7.6 16.4667 8.63867 16.4667 9.9218V10.1333H15.2V9.9218C15.2 9.78324 15.1727 9.64603 15.1197 9.51802C15.0667 9.39 14.9889 9.27369 14.891 9.17571C14.793 9.07773 14.6767 9.00001 14.5486 8.94698C14.4206 8.89396 14.2834 8.86667 14.1449 8.86667H12.6667C12.3307 8.86667 12.0085 9.00012 11.771 9.23767C11.5335 9.47521 11.4 9.79739 11.4 10.1333C11.4 10.4693 11.5335 10.7915 11.771 11.029C12.0085 11.2665 12.3307 11.4 12.6667 11.4H13.9333C14.6052 11.4 15.2496 11.6669 15.7247 12.142C16.1998 12.6171 16.4667 13.2615 16.4667 13.9333C16.4667 14.6052 16.1998 15.2496 15.7247 15.7247C15.2496 16.1998 14.6052 16.4667 13.9333 16.4667H12.6667C11.9948 16.4667 11.3504 16.1998 10.8753 15.7247C10.4002 15.2496 10.1333 14.6052 10.1333 13.9333H11.4C11.4 14.2693 11.5335 14.5915 11.771 14.829C12.0085 15.0665 12.3307 15.2 12.6667 15.2H13.9333C14.2693 15.2 14.5915 15.0665 14.829 14.829C15.0665 14.5915 15.2 14.2693 15.2 13.9333C15.2 13.5974 15.0665 13.2752 14.829 13.0377C14.5915 12.8001 14.2693 12.6667 13.9333 12.6667H12.6667C11.9948 12.6667 11.3504 12.3998 10.8753 11.9247C10.4002 11.4496 10.1333 10.8052 10.1333 10.1333ZM7.6 7.6V13.9333C7.6 14.2693 7.46655 14.5915 7.229 14.829C6.99146 15.0665 6.66927 15.2 6.33333 15.2C5.99739 15.2 5.67521 15.0665 5.43766 14.829C5.20012 14.5915 5.06667 14.2693 5.06667 13.9333H3.8C3.8 14.6052 4.0669 15.2496 4.542 15.7247C5.01709 16.1998 5.66145 16.4667 6.33333 16.4667C7.00521 16.4667 7.64958 16.1998 8.12467 15.7247C8.59976 15.2496 8.86667 14.6052 8.86667 13.9333V7.6H7.6Z"
+                              fill="url(#paint0_linear_38_8)"
+                            />
+                            <defs>
+                              <linearGradient
+                                id="paint0_linear_38_8"
+                                x1="0.499999"
+                                y1="4.99336e-07"
+                                x2="19"
+                                y2="19"
+                                gradientUnits="userSpaceOnUse"
+                              >
+                                <stop stop-color="#38C682" />
+                                <stop offset="1" stop-color="#00796D" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="text-2xl font-medium text-white"
+                        >Javascript Basic</span
+                      >
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide class="mb-14">
+                    <div class="flex flex-col gap-2.5 items-center text-center">
+                      <div
+                        class="p-2 w-full h-full rounded-full bg-learning-path-outline max-w-fit"
+                      >
+                        <div
+                          class="w-24 h-24 border-2 rounded-full border-green-800 bg-white flex items-center justify-center"
+                        >
+                          <svg
+                            width="42"
+                            height="45"
+                            viewBox="0 0 18 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0 0L1.578 17.834L9 20L16.468 17.835L18 0H0ZM13.3 14.722L9.007 15.926H9L4.703 14.722L4.406 11.555H6.514L6.664 13.081L8.999 13.72L11.339 13.08L11.584 10.03H4.314L4.127 8.024H11.767L11.941 6.018H3.924L3.748 4.012H14.254L13.3 14.722Z"
+                              fill="url(#paint0_linear_38_6)"
+                            />
+                            <defs>
+                              <linearGradient
+                                id="paint0_linear_38_6"
+                                x1="2.5"
+                                y1="1.5"
+                                x2="16.5"
+                                y2="18.5"
+                                gradientUnits="userSpaceOnUse"
+                              >
+                                <stop stop-color="#38C682" />
+                                <stop offset="1" stop-color="#00796D" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="text-2xl font-medium text-white"
+                        >CSS Basic</span
+                      >
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide class="mb-14">
+                    <div class="flex flex-col gap-2.5 items-center text-center">
+                      <div
+                        class="p-2 w-full h-full rounded-full bg-learning-path-outline max-w-fit"
+                      >
+                        <div
+                          class="w-24 h-24 border-2 rounded-full border-green-800 bg-white flex items-center justify-center"
+                        >
+                          <svg
+                            width="42"
+                            height="45"
+                            viewBox="0 0 18 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0 0L1.578 17.824L9 20L16.467 17.825L18 0H0ZM14.049 6.048H6.075L6.247 8.064H13.944L13.318 14.629L9.072 16.01L4.791 14.555L4.503 11.623H6.527L6.687 13.034L9.087 13.849L11.433 13.086L11.73 10.081H4.416L3.854 4.031H14.266L14.049 6.048Z"
+                              fill="url(#paint0_linear_38_4)"
+                            />
+                            <defs>
+                              <linearGradient
+                                id="paint0_linear_38_4"
+                                x1="0"
+                                y1="0"
+                                x2="15.5"
+                                y2="18.5"
+                                gradientUnits="userSpaceOnUse"
+                              >
+                                <stop stop-color="#38C682" />
+                                <stop offset="1" stop-color="#00796D" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="text-2xl font-medium text-white"
+                        >HTML 5 Basic</span
+                      >
+                    </div>
+                  </swiper-slide>
+                </swiper-container>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</html>
